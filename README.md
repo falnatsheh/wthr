@@ -7,7 +7,7 @@ wthr is a minimal mobile website to display the weather condition and temperatur
 3. [World Weather Online free API.](http://worldweatheronline.com/free-weather-feed.aspx)
 
 ## Demo and screenshot
-You could view the demo [here](wthr.feras.us).
+You could view the demo [here](http://wthr.feras.us).
 
 ![wthr screenshot](http://i.imgur.com/5LFTXl.png)
 
