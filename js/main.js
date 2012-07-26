@@ -13,8 +13,7 @@ $(document).ready(function () {
     }
 });
 
-function defaultWeather() {
-    //alert(" No location data :(. Default to New York City");  
+function defaultWeather() { 
     $.mobile.changePage('#msg-popup', 'pop', true, true);
     loadWeatherData("nyc");
 }
