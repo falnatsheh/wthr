@@ -25,11 +25,9 @@ body{
 
 #weather-content {
   margin-top: 100px;
+  text-align: center; 
 }
-
-#weather-content li {
-text-align: center;  
-}
+ 
 
 #weekday-name{
 	font-size: 30px;

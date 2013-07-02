@@ -47,6 +47,7 @@ function defaultWeather() {
 
 function loadWeatherData(q) {
     $.getJSON("http://free.worldweatheronline.com/feed/weather.ashx?q=" + q + "&callback=?&format=json&num_of_days=2&key=50fc6ff240011130123105", function (data) {
+        document.getElementById('loader').style.display='none';
         var weatherCode = data.data.current_condition[0].weatherCode;
         var weatherDesc = data.data.current_condition[0].weatherDesc[0].value;
         var weatherTemp = getWeatherTemp(data.data.current_condition[0]);
