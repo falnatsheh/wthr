@@ -1,9 +1,12 @@
 $(document).ready(function () {
+
+    installWebApp();
+    
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(function (location) {
             loadWeatherData(location.coords.latitude + "," + location.coords.longitude);
-        }, function (data) {
-            console.log("Error: ", data);
+        }, function (error) {
+            console.log("Error: ", error);
             defaultWeather();
         }, {
             timeout: 10000
@@ -13,8 +16,32 @@ $(document).ready(function () {
     }
 });
 
+function installWebApp(){
+    if (navigator.mozApps) {
+        var checkIfInstalled = navigator.mozApps.getSelf();
+        checkIfInstalled.onsuccess = function () {
+            if (checkIfInstalled.result) {
+               console.log("Already installed"); 
+            }
+            else {
+                var manifestURL = location.href.substring(0, location.href.lastIndexOf("/")) + "/manifest.webapp"; 
+                    var installApp = navigator.mozApps.install(manifestURL);
+                    installApp.onsuccess = function(data) {
+                        console.log("Installed!"); 
+                    };
+                    installApp.onerror = function() {
+                        alert("Install failed\n\n:" + installApp.error.name);
+                    }; 
+            }
+        };
+    }
+    else {
+        console.log("Open Web Apps not supported");
+    }
+}
+
 function defaultWeather() { 
-    $.mobile.changePage('#msg-popup', 'pop', true, true);
+    alert("Can't retrieve the device location, defaulted to NYC.");
     loadWeatherData("nyc");
 }
 
@@ -25,7 +52,7 @@ function loadWeatherData(q) {
         var weatherTemp = getWeatherTemp(data.data.current_condition[0]);
         $("#temperature").html(weatherTemp + "&#176;");
         $("#weather-icon").text(getClimaChar(weatherCode, weatherDesc));
-        $("#home").css("background", getBackgroundColor(weatherTemp));
+        $("body").css("background", getBackgroundColor(weatherTemp));
     });
 }
 

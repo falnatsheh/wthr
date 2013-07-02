@@ -1,0 +1,23 @@
+{
+    "name": "Wthr",
+    "description": "This app allows you to check the wthr!",
+    "launch_path": "/index.html",
+    "developer": {
+        "name": "Feras Alnatsheh",
+        "url": "http://feras.us"
+    },
+    "icons": {
+        "16": "/img/icon.png",
+        "32": "/img/icon.png",
+        "48": "/img/icon.png",
+        "64": "/img/icon.png",
+        "128": "/img/icon.png"
+    },
+    "installs_allowed_from": ["*"],
+    "default_locale": "en",
+    "permissions": {
+        "geolocation": {
+            "description" : "Marking out user location"
+        }
+    }
+}
