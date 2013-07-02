@@ -1,16 +1,12 @@
+
+![wthr demo](http://i.imgur.com/jWzorAM.gif)
+
 ## What is it?
-wthr is a minimal mobile website to display the weather condition and temperature based on your current location using HTML5 location API. The background color will reflect the weather temperature of your location.
-
-#####wthr uses: 
-1. [jQuery Mobile.](jquerymobile.com)
-2. [Climacons.](http://adamwhitcroft.com/climacons/)
-3. [World Weather Online free API.](http://worldweatheronline.com/free-weather-feed.aspx)
-
-## Demo and screenshot
-You could view the demo [here](http://wthr.feras.us).
-
-![wthr screenshot](http://i.imgur.com/5LFTXl.png)
+Wthr is a simple Firefox OS app. It uses HTML5 geolocation to get the device current location, query [World Weather Online APIs](http://worldweatheronline.com/free-weather-feed.aspx) for weather informations and change the background color of the app accordingly (the color ranges from dark orange for a high temperature to dark blue for cold one), it also changes the weather icon ([Climacons.](http://adamwhitcroft.com/climacons/font/)) based on the weather description.
 
 
-## License
-Licensed under the Apache License, Version 2.0.
+
+
+## How to Install 
+
+Go to [wthr.feras.us](http://wthr.feras.us) in your Firefox OS browser and install dialog will appear.
