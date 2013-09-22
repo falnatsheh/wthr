@@ -8,4 +8,4 @@ Wthr is a simple Firefox OS app. It uses HTML5 geolocation to get the device cur
 
 ## How to Install 
 
-Go to [wthr.feras.us](http://wthr.feras.us) in your Firefox OS browser and the install dialog will appear.
+Go to [wthr.feras.us](http://wthr.feras.us) on your Firefox OS browser and the install dialog will appear.
