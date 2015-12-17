@@ -10,4 +10,4 @@ Wthr is a simple Firefox OS app. It uses HTML5 geolocation to get the device cur
 
 ~~Go to [wthr.feras.us](http://wthr.feras.us) on your Firefox OS browser and the install dialog will appear.~~
 
-The website is sunsited :city_sunset: for now, untill Firefox Phone takes over the world :crystal_ball:. 
+The website is sunsited :city_sunset: ~~for now, untill Firefox Phone takes over the world~~, [bye bye Firefox OS](http://www.theverge.com/2015/12/8/9872802/mozilla-has-killed-the-firefox-phone).  
